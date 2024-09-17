@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Calc</title>
+		<style>
+			input, button {
+				/* it is css comment*/
+				width: 160px;
+				margin: 2px;
+				text-align: center;
+			}
+			
+		</style>
+		<script>
+			function plus() {
+				var x, y, z;
+				x = parseInt(document.getElementById("txtX").value);
+				y = parseInt(document.getElementById("txtY").value);
+				z = x + y;
+				document.getElementById("txtZ").value = z;
+			}
+			function minus() {
+				var x, y, m;
+				x = parseInt(document.getElementById("txtX").value);
+				y = parseInt(document.getElementById("txtY").value);
+				m = x - y;
+				document.getElementById("txtZ").value = m;
+			}
+		</script>
+	</head>
+	<body>
+		<!-- It is comment -->
+		<h1>Calculator</h1>
+		<p>Our unique calculator. Try it!</p>
+		<input id ="txtX"/> <br />
+		<input id ="txtY"/> <br />
+		<button style="color: red;" onclick="plus();">+</button> <br />
+		<button style="color: green;" onclick="minus();">-</button> <br />
+		<input id="txtZ"/>
+	</body>
+
+</html>
