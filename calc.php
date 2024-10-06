@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["user"])) {
+        echo('<meta http-equiv="refresh" content="3; URL=login.html">');
+		die("You need login to open this page! Вы будете перенаправлены");
+	}
+?>
 <html>
 	<head>
 		<meta charset="UTF-8">

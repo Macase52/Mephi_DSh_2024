@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["user"]))
+        die("You need login to open this page!");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
