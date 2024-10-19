@@ -53,6 +53,15 @@
 				document.getElementById("minus").className = "pressed";
 				document.getElementById("plus").className = "";
 			}
+			function ymnoz() {
+				var x, y, m;
+				x = parseInt(document.getElementById("txtX").value);
+				y = parseInt(document.getElementById("txtY").value);
+				m = x * y;
+				document.getElementById("txtZ").value = m;
+				document.getElementById("minus").className = "pressed";
+				document.getElementById("plus").className = "";
+			}
 		</script>
 	</head>
 	<body>
@@ -64,7 +73,8 @@
 			<input id ="txtY"/> <br />
 			<div class="buttons">
 				<button style="color: black;" onclick="plus();" id="plus">+</button> 
-				<button style="color: black;" onclick="minus();" id="minus">-</button> 
+				<button style="color: black;" onclick="minus();" id="minus">-</button>
+				<button style="color: black;" onclick="ymnoz();" id="ymnoz">*</button> 
 			</div>
 			<input id="txtZ"/>
 		</div>
