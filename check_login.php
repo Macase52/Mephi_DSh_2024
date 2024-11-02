@@ -32,7 +32,7 @@
     if(mysqli_num_rows($result)>0) {
         echo ("<h1>Hello, $user!</h1>");
         $_SESSION["user"] = $user;
-        echo('<meta http-equiv="refresh" content="3; URL=home.html">');
+        echo('<meta http-equiv="refresh" content="3; URL=home_.html">');
     }
     else {
             echo("<h1>Неверный вход!</h1>");
