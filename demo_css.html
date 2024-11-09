@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красоты CSS3</title>
+    <style>
+        div {
+            width: 140px;
+            height: 140px;
+            border: thin solid black;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #div1{
+            background: linear-gradient(45deg, #88AAFF, white);
+            transform: skewX(-20deg);
+        }
+
+        #div2 {
+            width: 70px;
+            height: 70px;
+            vertical-align: top;
+            border-radius: 50%;
+        }
+
+        #div3 {
+            background: linear-gradient(90deg, blue, red);
+            vertical-align: top;
+            transition-property: transform;
+            transition-duration: 3s;
+        }
+
+        #div3.clicked {
+            transform: rotate(360deg);
+        }
+
+        #div4 {
+            /* display: block; */
+            transform: translateX(50px) rotate(30deg);
+            transition-property: transform; 
+            transition-duration: 3s;
+        }
+
+        #div4:hover {
+            transform: translateX(50px) rotate(450deg);
+        }
+        
+        #div3 span {
+            color: white;
+        }
+
+        #div3 span.hoho {
+            color: yellow;
+        }
+
+        div:hover {
+            border: red thick solid;
+        }
+
+        #div2:hover {
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function turn() {
+            if (document.getElementById("div3").className == "clicked")
+                document.getElementById("div3").className = "";
+            else
+                document.getElementById("div3").className = "clicked";
+        }
+    </script>
+</head>
+<body>
+    <h1>Красоты CSS3</h1>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3" onclick="turn();">
+        <span>Ляляля</span>
+        <span class="hoho">Бубубу</span>
+    </div>
+    <div id="div4"></div>
+
+</body>
+</html>

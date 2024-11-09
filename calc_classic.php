@@ -91,6 +91,10 @@
 				<input name="txtZ" value="<?=$z?>"/>
 			</form>
 		</div>
+
+		<textarea>
+			
+		</textarea>
 		
 	</body>
 

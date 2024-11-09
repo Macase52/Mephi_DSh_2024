@@ -13,17 +13,24 @@
 			input {
 				/* it is css comment*/
 				width: 160px;
-				margin: 2px;
+				margin: 10px;
 				text-align: center;
+				border: thin solid yellowgreen;
+				cursor: pointer;
 			}
 
 			button {
 				width: 70px;
 				background-color: darkgrey;
+				border-radius: 10px;
+				border: thin solid green;
+				background: linear-gradient(10deg, white, green);
+				margin: 5px;
+				cursor: pointer;
 			}
 
 			.calculator {
-				border: solid black thin;
+				border: solid green thin;
 				width: 180px;
 				padding: 10px;
 				text-align: center;
@@ -37,7 +44,20 @@
 			img {
 				height: 200px;
 			}
-			
+
+			#plus:hover {
+				transform: skewX(-40deg);
+        	}
+
+			#minus:hover {
+            	transform: skewX(-40deg);
+        	}
+
+			#ymnoz:hover {
+            	transform: skewX(-40deg);
+        	}
+
+						
 		</style>
 
 		<script>
